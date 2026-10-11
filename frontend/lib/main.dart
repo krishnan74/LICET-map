@@ -35,18 +35,17 @@ class SplashScreen extends StatelessWidget{
   @override
   Widget build(BuildContext context){
     return AnimatedSplashScreen(
-        splash: Column(
-                  children: [
-                    Image.asset("assets/images/mapIcon.png", width: 200,height: 200,),
-                    const Text("LICET MAP", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 20),)
-                  ],
-    ),
-        nextScreen: Launcher_Page(),
-        backgroundColor: Color.fromRGBO(39,40,43, 1),
+      splash: Column(
+        children: [
+          Image.asset("assets/images/mapIcon.png", width: 200,height: 200,),
+          const Text("LICET MAP", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 20),)
+        ],
+      ),
+      nextScreen: Launcher_Page(),
+      backgroundColor: Color.fromRGBO(39,40,43, 1),
       duration: 2000,
       splashTransition: SplashTransition.fadeTransition,
       splashIconSize: 250,
     );
   }
 }
-
